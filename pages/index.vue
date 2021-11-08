@@ -25,7 +25,7 @@ export default {
   methods: {
     confirm() {
       this.saveFormData(this.formData);
-      this.$router.push({ name: 'confirm', params: {queryParamCanbeInheritedFromHere: 1}  })
+      this.$router.push({ name: 'confirm', query: {queryParamCanbeInheritedFromHere: 1}  })
     },
     ...mapMutations({
       saveFormData: 'inquiry/saveFormData'
